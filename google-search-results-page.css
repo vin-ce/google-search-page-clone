@@ -1,0 +1,155 @@
+/* 
+.container-nav {
+	display: grid;
+    grid:
+        [row-1-start] "nav-top-left nav-top-middle nav-top-right" 60px [row-1-end]
+        [row-2-start] ". nav-bottom-middle ." 60px[row-2-end] 
+        / 150px 700px 300px;
+}
+
+.container-main {
+    display: grid;
+    grid:
+    [row-1-start] ". main ." 100px [row-1-end]
+    [row-2-start] ". footer ." 80px [row-2-end]
+    / 150px 700px 300px;
+}
+
+
+.nav-top{
+    grid-area: nav-top-middle;
+}
+
+.google-logo {
+    grid-area: nav-top-left;
+}
+
+.search-bar {
+    grid-area: nav-top-middle;
+}
+
+.profile-icons {
+    grid-area: nav-top-right;
+}
+
+Terminated this line of design of attempting to use the grid. As I couldn't figure out how to nest grids within grids (and as I refused to flatten out my HTML), I'm just going to attempt the flexbox.*/
+
+body {
+	font-family: "Roboto";
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+}
+
+body {
+	margin: 0;
+}
+
+.nav-top-links {
+	width: 100%;
+	height: 45px;
+	padding: 20px 0 0 0;
+	align-items: center;
+}
+
+.google-logo img {
+	width: 92px;
+	height: 30px;
+	padding: 0 18px;
+}
+
+.search-bar {
+	margin: 0 15px;
+	width: 640px;
+	height: 100%;
+	padding: 0;
+	border: 1.25px solid #dfe1e5;
+	border-radius: 40px;
+	align-items: center;
+}
+
+input {
+	border: none;
+	width: 600px;
+	margin-left: 20px;
+	background: none;
+	font-family: arial;
+	font-size: 16px;
+}
+
+input:focus {
+	outline: none;
+}
+
+.icon-size-24px {
+	height: 24px;
+	width: 24px;
+}
+
+.microphone-icon {
+	margin: 0 0 0 auto;
+}
+.search-bar-search-icon {
+	margin: 0 15px;
+}
+
+.profile-icons {
+	margin-left: auto;
+	align-items: center;
+}
+
+.apps-icon {
+	margin-right: 20px;
+}
+
+.profile-circle-icon {
+	height: 32px;
+	width: 32px;
+	margin-right: 45px;
+	border-radius: 50%;
+}
+.margin-left {
+	margin-left: 160px;
+}
+
+.nav-bottom {
+	height: 58px;
+	border-bottom: 1px solid #dfe1e5;
+}
+
+.nav-bottom-links {
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 600px;
+	height: 100%;
+
+	font-size: 13px;
+}
+
+.icon-size-16px {
+	height: 16px;
+	width: 16px;
+}
+
+.font-size-16px {
+	font-size: 16px;
+}
+
+.icon-padding {
+	padding: 16px 12px 12px 10px;
+}
+
+.vert-align {
+	vertical-align: middle;
+}
+
+.tools:hover {
+	border: 1px solid red;
+}
